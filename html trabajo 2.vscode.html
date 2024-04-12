@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Germinación de Semillas de Breiner Gutiérrez</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif; /* Cambiar la fuente a Times New Roman */
+            color: #000000;
+            padding: 20px;
+            margin: 0; /* Eliminar margen */
+            height: 100vh; /* Ajustar la altura al 100% de la ventana del navegador */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        h2 {
+            color: #4c0785; /* Cambiar color de los títulos */
+        }
+        .content {
+            display: none; /* Ocultar contenido por defecto */
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/tech.batanga.com/files/Fondos-para-paginas-web.jpg)">
+    <center>
+        <h2>Germinación de Semillas de Breiner Gutiérrez</h2>
+        <button class="btn" onclick="showContent('introduccion')">Introducción</button>
+        <button class="btn" onclick="showContent('objetivo')">Objetivo</button>
+        <button class="btn" onclick="showContent('desarrollo')">Desarrollo</button>
+        <button class="btn" onclick="showContent('bibliografia')">Bibliografía</button>
+    </center>
+    
+    <!-- Contenido -->
+    <div id="introduccion" class="content">
+        <h2>Introducción</h2>
+        <h3> <p>La germinación de semillas es el proceso mediante el cual una semilla se convierte en una planta. Es un paso crucial en el ciclo de vida de la planta y marca el comienzo de su crecimiento. En este trabajo, nos enfocaremos en aprender cómo germinar semillas de frijol y de maíz.</p></h3>
+    </div>
+    
+    <div id="objetivo" class="content">
+        <h2>Objetivo</h2>
+        <h3>  <p>El objetivo de este trabajo es entender y describir los pasos necesarios para germinar con éxito semillas de frijol y de maíz. Exploraremos los factores que afectan la germinación, los materiales necesarios y los pasos a seguir para fomentar un crecimiento saludable de estas plantas.</p> </h3>
+    </div>
+    
+    <div id="desarrollo" class="content">
+        <h2>Desarrollo</h2>
+        <h3>Germinación de semillas de frijol:</h3>
+        <h2><p>Para germinar semillas de frijol, se pueden seguir los siguientes pasos:</p></h2>
+        <ol>
+            <h3><li>Seleccionar semillas de frijol de buena calidad.</li></h3>
+            <h3><li>Preparar un recipiente con tierra fértil y bien drenada.</li></h3>
+            <h3><li>Colocar las semillas de frijol en la tierra, a una profundidad adecuada.</li></h3>
+            <h3><li>Regar las semillas regularmente y mantener el suelo húmedo.</li></h3>
+            <h3><li>Proporcionar luz solar adecuada.</li></h3>
+            <h3><li>Observar el proceso de germinación y cuidar las plántulas a medida que crecen.</li></h3>
+        </ol>
+        
+        <h2>Germinación de semillas de maíz:</h2>
+    <h3><p>Los pasos para germinar semillas de maíz son similares a los del frijol, pero se deben tener en cuenta algunas diferencias:</p></h3>
+        <ul>
+            <h3><li>Seleccionar semillas de maíz adaptadas a la zona climática.</li></h3>
+            <h3><li>Plantar las semillas de maíz en surcos o hoyos espaciados adecuadamente.</li></h3> 
+            <h3><li>Proporcionar un riego uniforme para mantener el suelo húmedo.</li></h3>
+            <h3><li>Asegurar una temperatura del suelo adecuada para la germinación.</li></h3>
+            <h3><li>Proteger las plántulas de plagas y enfermedades comunes.</li></h3>
+        </ul>
+    </div>
+    
+    <div id="bibliografia" class="content">
+        <h2>Bibliografía</h2>
+        <ul>
+            <h3><li>Smith, J. (2020). Guía práctica para la germinación de semillas. Editorial Agricultura Moderna.</li></h3>
+            <h3><li>García, M. (2018). Manual de cultivo de maíz. Editorial Agropecuaria.</li></h3>
+            <h3><li>Rodríguez, P. (2019). Germinación y desarrollo inicial de plantas de frijol. Revista Científica de Agricultura.</li></h3>
+        </ul>
+    </div>
+
+    <script>
+        function showContent(id) {
+            // Ocultar todo el contenido
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            // Mostrar el contenido deseado
+            var content = document.getElementById(id);
+            content.style.display = 'block';
+        }
+    </script>
+</body>
